@@ -6,6 +6,7 @@ export const BoxLog = styled.div`
 
   @media (min-width: 60rem) {
     width: 42rem;
+    height: 36rem;
     padding: 8rem;
     border: 2px solid ${(props) => props.theme.grayPrimary};
     border-radius: 10px;
