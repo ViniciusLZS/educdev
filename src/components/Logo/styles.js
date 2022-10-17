@@ -14,7 +14,8 @@ export const TitleH1 = styled.h1 `
 export const Title = styled.h2`
   font-weight: 700;
   font-size: 4rem;
-
+  text-decoration: none;
+  color: ${props=> props.theme.colorPrimary};
   @media (min-width: 60rem) {
     margin-bottom: 1rem;
   }
