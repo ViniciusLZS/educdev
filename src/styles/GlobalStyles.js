@@ -17,7 +17,7 @@ export const GlobalStyle = createGlobalStyle`
     width: 100%;
     height: 100%;
     font-size: 1.6rem;
-    color: ${props => props.theme.colorPrimary};
+    color: ${(props) => props.theme.colorPrimary};
   }
   #root{
     max-width: 90rem;
@@ -32,6 +32,10 @@ export const GlobalStyle = createGlobalStyle`
     font-weight: 500;
   }
 
+  :link{
+  text-decoration: none;
+  }
+
   button {
     cursor: pointer;
   }
@@ -39,6 +43,9 @@ export const GlobalStyle = createGlobalStyle`
   [disabled] {
     opacity: 0.6;
     cursor: not-allowed;
+  }
+  ::placeholder{
+    font-size: 1.3rem;
   }
 
 `;
