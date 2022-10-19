@@ -2,22 +2,42 @@ import styled from 'styled-components';
 
 export const Label = styled.label`
   padding-left: 1rem;
-  padding-bottom: 1rem;
 `;
+
+export const Box = styled.div`
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  position: relative;
+  svg {
+    position: absolute;
+    left: 1.4rem;
+    bottom: 1.3rem;
+
+    path {
+      fill: ${(props) => props.theme.grayPrimary};
+    }
+  }
+  &:hover svg {
+    path {
+      fill: ${(props) => props.theme.yellowDark};
+    }
+  }
+`;
+
 export const Input = styled.input`
   color: ${(props) => props.theme.colorPrimary};
-  margin-bottom: 2rem;
+
   border: 2px solid ${(props) => props.theme.grayPrimary};
-  display: block;
   width: 100%;
+  height: 4.5rem;
   font-size: 1.6rem;
   background: ${(props) => props.theme.backgroundPrimary};
-  padding: 1rem;
+  padding-left: 4rem;
   border-radius: 10px;
   transition: 0.2s;
 
-
-  &:focus, :hover {
+  &:focus,
+  :hover {
     color: black;
     box-shadow: 0 0 0 2px ${(props) => props.theme.yellowLight};
     outline: none;
