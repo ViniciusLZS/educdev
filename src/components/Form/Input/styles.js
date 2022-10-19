@@ -12,10 +12,6 @@ export const Box = styled.div`
     position: absolute;
     left: 1.4rem;
     bottom: 1.3rem;
-
-    path {
-      fill: ${(props) => props.theme.grayPrimary};
-    }
   }
   &:hover svg {
     path {
@@ -26,13 +22,13 @@ export const Box = styled.div`
 
 export const Input = styled.input`
   color: ${(props) => props.theme.colorPrimary};
-
   border: 2px solid ${(props) => props.theme.grayPrimary};
   width: 100%;
   height: 4.5rem;
   font-size: 1.6rem;
   background: ${(props) => props.theme.backgroundPrimary};
   padding-left: 4rem;
+  padding-right: 4rem;
   border-radius: 10px;
   transition: 0.2s;
 
@@ -44,4 +40,8 @@ export const Input = styled.input`
     border: 1px solid ${(props) => props.theme.yellowDark};
     background: ${(props) => props.theme.colorPrimary};
   }
+`;
+
+export const BoxIcon = styled.div`
+  display: block;
 `;

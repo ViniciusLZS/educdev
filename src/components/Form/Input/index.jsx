@@ -3,6 +3,11 @@ import * as S from './styles';
 import Icons from '../../Icons';
 
 const Input = ({ label, name, type, placeholder, value }) => {
+  const [state, setState] = React.useState(false);
+  function handleClick() {
+    setState(!state);
+  }
+  console.log(state);
   return (
     <>
       <S.Label htmlFor={name}> {label} </S.Label>
@@ -10,11 +15,13 @@ const Input = ({ label, name, type, placeholder, value }) => {
         <S.Input
           id={name}
           name={name}
-          type={type}
+          type={state ? "text" : "password"}
           value={value}
           placeholder={placeholder}
         />
-        <Icons label={label} />
+        <S.BoxIcon onClick={handleClick}>
+          <Icons label={label} state={state} />
+        </S.BoxIcon>
       </S.Box>
     </>
   );
