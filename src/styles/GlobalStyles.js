@@ -32,8 +32,9 @@ export const GlobalStyle = createGlobalStyle`
     font-weight: 500;
   }
 
-  :link{
-  text-decoration: none;
+  a, :link{
+    color: white;
+    text-decoration: none;
   }
 
   button {
