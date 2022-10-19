@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { ReactComponent as Arrow } from '../../assets/arrow.svg';
+import { ReactComponent as Arrow } from '../../assets/arrow-icon.svg';
 import * as S from './styles';
 
 const SignInAndUp = () => {

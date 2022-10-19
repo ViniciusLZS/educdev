@@ -4,7 +4,6 @@ import Logo from '../../components/Logo';
 import SignIn from '../SignIn';
 import SignUp from '../SignUp';
 import SignInAndUp from '../SignInAndUp';
-
 import * as S from './styles';
 
 const Home = () => {
