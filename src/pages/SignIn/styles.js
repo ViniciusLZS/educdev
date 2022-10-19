@@ -10,8 +10,8 @@ export const Content = styled.section`
   @media (min-width: 60rem) {
     border: 2px solid ${(props) => props.theme.grayPrimary};
     width: 42rem;
-    height: 38rem;
-    padding: 1rem 4rem;
+    height: auto;
+    padding: 1rem 4rem 3rem 4rem;
     border-radius: 10px;
   }
 `;
@@ -23,6 +23,16 @@ export const Form = styled.form`
   width: 100%;
   max-width: 40rem;
   height: 100%;
+  a {
+    align-self: flex-end;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+
+    @media (min-width: 60rem) {
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+  }
 `;
 
 export const Title = styled.h1`
@@ -43,4 +53,23 @@ export const Title = styled.h1`
   text-shadow: -1px 0px 4px rgba(242, 159, 5, 0.25);
 `;
 
+export const Span = styled.span`
+  font-size: 1.3rem;
+  cursor: pointer;
 
+  &:hover {
+    color: ${(props) => props.theme.yellowDark};
+    text-decoration: underline;
+  }
+`;
+
+export const Link = styled.p`
+  font-size: 1.3rem;
+  margin-top: 3rem;
+
+  @media (min-width: 60rem) {
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+  }
+  text-align: center;
+`;
