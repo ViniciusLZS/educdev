@@ -4,6 +4,10 @@ export const Label = styled.label`
   padding-left: 1rem;
 `;
 
+export const Opicional = styled.span`
+  font-size: 1rem;
+`;
+
 export const Box = styled.div`
   margin-top: 1rem;
   margin-bottom: 2rem;
