@@ -49,4 +49,23 @@ export const GlobalStyle = createGlobalStyle`
     font-size: 1.3rem;
   }
 
+  select{
+    color: ${(props) => props.theme.colorPrimary};
+    border: 2px solid ${(props) => props.theme.grayPrimary};
+    height: 4.5rem;
+    font-size: 1.6rem;
+    background: ${(props) => props.theme.backgroundPrimary};
+    padding-left: 1rem;
+    border-radius: 10px;
+    transition: 0.2s;
+
+    &:focus,
+    :hover {
+      color: black;
+      box-shadow: 0 0 0 2px ${(props) => props.theme.yellowLight};
+      outline: none;
+      border: 1px solid ${(props) => props.theme.yellowDark};
+      background: ${(props) => props.theme.colorPrimary};
+      }
+    }
 `;
