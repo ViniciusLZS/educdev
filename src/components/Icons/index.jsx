@@ -9,7 +9,7 @@ import * as S from './styles';
 const Icons = ({ label, state }) => {
 
   switch (label) {
-    case 'Usuário':
+    case 'Usuário': case 'Apelido':
       return <Usuario />;
 
     case 'E-mail':
