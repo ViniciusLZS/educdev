@@ -8,10 +8,6 @@ export const Container = styled.section`
   gap: 3rem;
   width: 100%;
   height: 100vh;
-
-  @media(min-width: 60rem){
-    flex-direction: row;
-  }
 `;
 export const Content = styled.div`
   display: flex;
