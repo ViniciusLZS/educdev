@@ -23,7 +23,8 @@ export const Paragraph = styled.p`
   padding-bottom: 2rem;
 `;
 
-export const LinkLog = styled.a`
+export const LinkLog = styled.p`
+  display: inline-block;
   font-weight: 500;
   font-size: 3rem;
 

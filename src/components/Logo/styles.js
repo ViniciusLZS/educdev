@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const BoxLogo = styled.div`
   @media (min-width: 60rem) {
-    padding: 12rem;
+    padding: 6rem;
   }
 `;
 
