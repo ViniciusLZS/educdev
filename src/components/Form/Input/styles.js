@@ -12,6 +12,7 @@ export const Box = styled.div`
   margin-top: 1rem;
   margin-bottom: 2rem;
   position: relative;
+
   svg {
     position: absolute;
     left: 1.4rem;
@@ -48,4 +49,8 @@ export const Input = styled.input`
 
 export const BoxIcon = styled.div`
   display: block;
+
+  path {
+    fill: ${(props) => (props.isFocused ? props.theme.yellowDark : '')};
+  }
 `;
