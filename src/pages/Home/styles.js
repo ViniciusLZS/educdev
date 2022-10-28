@@ -10,7 +10,8 @@ export const Content = styled.section`
   gap: 10rem;
 
   @media (min-width: 60rem) {
-    flex-direction: row;
+    gap: 5rem;
+    flex-direction: ${props => props.pathname.length === 1 ? 'row' : 'column'};
     gap: 3rem;
   }
 `;
